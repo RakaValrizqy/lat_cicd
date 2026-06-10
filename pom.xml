@@ -4,18 +4,24 @@
   <artifactId>ContohProject2</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-<dependencies>
-  <dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.11</version> <!-- Or whatever JUnit you're using. -->
-	</dependency>
-</dependencies>
-  
-  <properties>
-     <maven.compiler.source>1.8</maven.compiler.source>
-     <maven.compiler.target>1.8</maven.compiler.target>
- </properties>
-  
-</project>
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/RakaValrizqy/lat_cicd</url>
+    </repository>
+  </distributionManagement>
 
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+    </dependency>
+  </dependencies>
+   
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+</project>
