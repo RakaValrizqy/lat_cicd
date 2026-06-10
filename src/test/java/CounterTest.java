@@ -43,9 +43,9 @@ public class CounterTest {
 	public void testDecrement2() {
 		Counter testCounter = new Counter();
 		
-		for(int i = 1; i <10; i++) {
+		for(int i = 1; i <20; i++) {
 			testCounter.decrement();
-			assertEquals(testCounter.getCount(), i * -2);
+			assertEquals(testCounter.getCount(), i * -1);
 		}
 	}
 
